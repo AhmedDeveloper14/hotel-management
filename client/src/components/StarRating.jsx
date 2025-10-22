@@ -8,7 +8,7 @@ const StarRating = ({ rating = 4 }) => {
         <img
           key={index}
           src={rating > index ? assets.starIconFilled : assets.starIconOutlined}
-          alt="star-icon"
+          alt="star-icon" 
           className="w-4.5 h-4.5"
         />
       ))}
