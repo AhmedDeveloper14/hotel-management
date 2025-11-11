@@ -1,0 +1,67 @@
+# Dependency directories
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage and build
+coverage/
+dist/
+dist-ssr/
+build/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+public/
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+client/.env
+server/.env
+
+# Temporary and cache
+tmp/
+temp/
+.nyc_output/
+.grunt/
+bower_components/
+jspm_packages/
+.npm/
+.eslintcache/
+.node_repl_history/
+
+# System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor files
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Others
+*.tgz
+.yarn-integrity
+.out/
+.storybook-out/
