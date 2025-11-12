@@ -15,7 +15,14 @@ connectDB();
 connectCloudinary();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://hotel-management-frontend-eta.vercel.app",
+    "http://localhost:5173"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
 // ⚡ Stripe webhook must be handled *before* express.json()
 app.post("/api/stripe", express.raw({ type: "application/json" }), stripeWebhooks);
